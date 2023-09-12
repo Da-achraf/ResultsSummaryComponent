@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    font-weight: 500;
+    src: url('assets/fonts/static/HankenGrotesk-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Hanken Grotesk';
+    font-weight: 700;
+    src: url('assets/fonts/static/HankenGrotesk-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Hanken Grotesk';
+    font-weight: 800;
+    src: url('assets/fonts/static/HankenGrotesk-ExtraBold.ttf') format('truetype');
+}
+
+
+* {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+
+
+button:hover {
+    background-color: hsl(241, 81%, 54%);
+}

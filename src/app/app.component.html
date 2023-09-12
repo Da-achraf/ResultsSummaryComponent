@@ -1,0 +1,68 @@
+<!-- Card Container -->
+<div
+  class="flex flex-col gap-0 max-w-[33rem] mt-0 mx-auto rounded-b-3xl shadow-2xl md:flex md:flex-row md:mt-[12rem] md:rounded-3xl"
+>
+  <!-- Card left part -->
+  <div
+    class="flex flex-col items-center gap-6 bg-lightRoyalBlue w-full rounded-b-3xl py-5 px-8 md:w-1/2 md:rounded-3xl"
+  >
+    <h3 class="text-[#CFBEFF] font-semibold">Your Result</h3>
+    <div
+      class="flex flex-col justify-center bg-violetBlue w-[8rem] h-[8rem] text-center rounded-full backdrop-opacity-50"
+    >
+      <p class="text-white text-[3rem] font-bold">76</p>
+      <p class="text-lightLavendar text-sm">of 100</p>
+    </div>
+    <div class="text-center">
+      <h1 class="text-white mb-2 font-bold text-xl tracking-wide">Great</h1>
+      <p class="text-center text-sm text-lightLavendar">
+        You scored higher that 65% of the people who have taken these tests.
+      </p>
+    </div>
+  </div>
+  <!-- Right part -->
+  <div
+    class="flex flex-col items-start gap-2 bg-white w-full p-5 rounded-r-3xl md:w-1/2"
+  >
+    <h3 class="font-semibold text-darkGrayBlue">Summary</h3>
+    <ng-container *ngFor="let item of summaryItems$ | async">
+      <div
+        class="flex flex-row justify-between w-full bg-[#FFFBF2] py-4 px-4 rounded-md text-sm font-semibold"
+      >
+        <div class="flex items-center gap-2">
+          <img width="16" height="16" [src]="item.icon" alt="" />
+          <ng-container [ngSwitch]="item.category">
+            <span *ngSwitchCase="'Reaction'" class="text-lightRed">{{
+              item.category
+            }}</span>
+            <span *ngSwitchCase="'Memory'" class="text-orangeyYellow">{{
+              item.category
+            }}</span>
+            <span *ngSwitchCase="'Verbal'" class="text-greenTeal">{{
+              item.category
+            }}</span>
+            <span *ngSwitchCase="'Visual'" class="text-violetBlue">{{
+              item.category
+            }}</span>
+          </ng-container>
+        </div>
+        <div>
+          <span>{{ item.score }}</span>
+          <span class="text-[#aca9af]"> / 100</span>
+        </div>
+      </div>
+    </ng-container>
+    <button
+      class="bg-darkGrayBlue text-[#edeff1] w-full px-5 py-3 rounded-3xl mt-3 text-sm"
+    >
+      Continue
+    </button>
+  </div>
+</div>
+
+<div class="attribution mt-3">
+  Challenge by
+  <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+    >Frontend Mentor</a
+  >. Coded by <a href="https://github.com/Da-achraf">Achraf BOUKIR</a>.
+</div>
