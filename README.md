@@ -8,6 +8,12 @@ You can view the live demo of the project [here](https://da-achraf.github.io/Res
 - Angular application built as a standalone project.
 - Utilizes the power of the Angular framework for dynamic rendering and interactivity.
 - Tailwind CSS is used for responsive styling and layout.
+
+## Technologies Used
+- Angular.
+- Tailwind CSS.
+- HTML5.
+
 ## Usage
 Clone the repository
 
@@ -27,10 +33,7 @@ Install dependencies
 ```
 
 Open your browser and navigate to http://localhost:4200/ to see the application in action
-## Technologies Used
-- Angular.
-- Tailwind CSS.
-- HTML5.
+
 ## Screenshots
 #### Larger Screens
 ![Logo](https://raw.githubusercontent.com/Da-achraf/ResultsSummaryComponent/gh-pages/preview-images/larger-screens.PNG)
