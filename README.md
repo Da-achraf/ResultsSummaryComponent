@@ -27,10 +27,6 @@ Install dependencies
 ```
 
 Open your browser and navigate to http://localhost:4200/ to see the application in action
-## Features
-- Angular application built as a standalone project.
-- Utilizes the power of the Angular framework for dynamic rendering and interactivity.
-- Tailwind CSS is used for responsive styling and layout.
 ## Technologies Used
 - Angular.
 - Tailwind CSS.
